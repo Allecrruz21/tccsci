@@ -1,0 +1,133 @@
+<?php
+session_start();
+?>
+
+	<!doctype html>
+	<html lang="pt-br">
+	  <head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+		<link rel="stylesheet" href="_css/bootstrap.css">
+		<link rel="stylesheet" href="_css/estilo.css">
+		<link rel="icon" href="_images\logoico.png" type= "image/x-icon"/>
+		<title>Portal de Imóveis PE</title>
+	  </head>
+	  <body>
+	  
+	  <header>
+		  <div class="media">
+		  <img src="_images/logo64.png" class="align-self-center mr-3">
+		  <div class="media-body">
+			<h1 class="mt-0">Portal de Imóveis SCI</h1>
+		  </div>
+		</div>
+	  </header>
+	 
+	 <h2>Seu Imóvel está aqui</h2>
+	
+	<div class="container" id="centro">
+	<form method="post" action="portal.php#ancora">
+		<div class="form-row" id="pesquisa">
+			
+		<div class="form-group col-md-3">
+		  <label for="inputState">Interesse em:</label>
+		  <select id="inputState" class="form-control" name="interesse">
+			<option>-</option>
+			<option>Aluguel</option>
+			<option>Venda</option>
+		  </select>
+		</div>
+		
+		<div class="form-group col-md-3">
+			  <label for="inputState">Tipo de Imóvel:</label>
+			  <select id="inputState" class="form-control" name="tipo-imovel">
+				<option>-</option>
+				<option>Apartamento</option>
+				<option>Casa</option>
+				<option>Flat</option>
+				<option>Galpão</option>
+				<option>Loja</option>
+				<option>Sala Comercial</option>
+				<option>Terreno</option>
+				<option>Lote</option>
+			  </select>
+			</div>
+		
+		<div class="form-group col-md-3">
+		  <label for="inputState">Estadia:</label>
+		  <select id="inputState" class="form-control" name="tipo">
+			<option>-</option>
+			<option>Residencial</option>
+			<option>Comercial</option>
+		  </select>
+		</div>
+			<div id="botao">
+				<button type="submit" class="btn btn-danger">Pesquisar</button>
+			</div>	
+			</div>
+		</form>
+		</div>
+		
+	<div class="cinza1"></div>
+	
+		
+			
+			<a name="ancora"></a>
+			
+	<?php	
+	$interesse = $_POST['interesse'];
+	$tipo = $_POST['tipo-imovel'];
+	$imovel = $_POST['tipo'];
+	?>
+			
+			
+			<div class="container">
+				<div class="card" style="width: 80%;">
+				
+				 <img src="_images/service1.jpg"> 
+				
+				  <div class="card-body">
+				  <div class="btn1">
+					  <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+						<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+						<span class="sr-only">Volta</span>
+					  </a>
+				  </div>
+				  <div class="btn2">
+				  <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+					<span class="carousel-control-next-icon" aria-hidden="true"></span>
+					<span class="sr-only">Avança</span>
+				  </a>
+				  </div>
+					<h4 class="card-title">Informações do imóvel</h4>
+							</br>
+							<label id="info">Código:</label>&nbsp;<label class="inf1" name="inf1">0000</label>
+							</br>
+							<label id="info">Valor:</label>&nbsp;<label class="inf2" name="inf2">R$ 0,00</label>
+							&nbsp;
+							<label id="info">Tipo:</label>&nbsp;<label class="inf3" name="inf3">Informação</label>
+							</br>
+							<label id="info">Banheiro:</label>&nbsp;<label class="inf4" name="inf4">00</label>
+							&nbsp;
+							<label id="info">Quartos:</label>&nbsp;<label class="inf5" name="inf5">00</label>
+							&nbsp;
+							<label id="info">Imóvel:</label>&nbsp;<label class="inf6" name="inf6">Informação6</label>
+				  </div>
+				</div>
+			</div>
+	
+	<div class="cinza1"></div>
+	
+	<footer>
+	<h5>Integração S.C.I - Portal de Imóveis &copy;Copyright 2019. Todos os direitos reservados ao Grupo SCI&reg;.</h5>
+	</footer>
+	
+		<script src="_js/bootstrap.bundle.js"></script>
+		<script src="_js/bootstrap.bundle.min.js"></script>
+		<script src="_js/bootstrap.js"></script>
+		<script src="_js/bootstrap.min.js"></script>
+		<script src="_js/popper.min.js"></script>
+		<script src="_js/jquery.min.js"></script>
+		<script src="_js/jquery-3.3.1.slim.min.js"></script>
+	  </body>
+	</html>
