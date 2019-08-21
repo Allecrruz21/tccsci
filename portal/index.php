@@ -143,7 +143,7 @@ $caminho = "http://tccsci.epizy.com/php_action/upload/"; //caminho da imagem
 				
 				</div>
 
-                 <?php $result = "SELECT imagem FROM imagem where idimovel='$id_imovel' limit 1, $teste";
+                 <?php $result = "SELECT imagem FROM imagem where idimovel='$id_imovel' ORDER BY imagem ASC limit 1, 100 ";
 		    	 $resultado = mysqli_query($conectar, $result);
                   while($rows_c = mysqli_fetch_assoc($resultado)){ ?>
 
