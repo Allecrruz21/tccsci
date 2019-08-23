@@ -113,7 +113,7 @@ $sql2 = "INSERT INTO cliente(porcentagem, nome, cpf, email, celular, telefone, c
                    
 					
                     		echo "
-						<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://tccsci.epizy.com/Paginas/cadastro.php'>
+						<META HTTP-EQUIV=REFRESH CONTENT = '0;URL=http://tccsci.epizy.com/Paginas/fotos.php'>
 						<script type=\"text/javascript\">
 							alert(\"Cadastro Realizado com sucesso.\");
 						</script>
